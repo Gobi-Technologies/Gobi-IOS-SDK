@@ -1,18 +1,19 @@
 {
   "name": "GobiSDK",
-  "version": "0.1.0",
+  "version": "0.0.2",
   "summary": "A short description of GobiSDK.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/savilov/GobiSDK",
+  "description": "Long description for GobiSDK with detailed description",
+  "homepage": "https://github.com/Gobitech/Gobi-IOS-SDK",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "savilov": "serega.avilov@gmail.com"
+    "Gobitech": "andreas@gobiapp.com"
   },
   "source": {
-    "http": "https://github.com/savilov/LoggerTestSDK/releases/download/0.1.0/GobiSDK-0.1.0.zip"
+    "git": "https://github.com/Gobitech/Gobi-IOS-SDK.git",
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "10.0"

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GobiSDK'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A short description of GobiSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Long description for GobiSDK with detailed description
   s.homepage         = 'https://github.com/Gobitech/Gobi-IOS-SDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Gobitech' => 'andreas@gobiapp.com' }
-  s.source           = { :http => 'https://github.com/Gobitech/Gobi-IOS-SDK/releases/download/0.0.1/GobiSDK-0.0.1.zip' }
+  s.source           = { :git => 'https://github.com/Gobitech/Gobi-IOS-SDK.git', :tag => '0.0.2' }
 
   s.ios.deployment_target = '10.0'
   s.vendored_frameworks = 'GobiSDK.framework'
