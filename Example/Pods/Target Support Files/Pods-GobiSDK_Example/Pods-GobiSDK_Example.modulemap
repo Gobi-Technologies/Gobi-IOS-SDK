@@ -1,0 +1,6 @@
+framework module Pods_GobiSDK_Example {
+  umbrella header "Pods-GobiSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

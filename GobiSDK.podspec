@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GobiSDK'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of GobiSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -18,25 +18,15 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Long description for GobiSDK with detailed description
                        DESC
 
-  s.homepage         = 'https://github.com/savilov/GobiSDK'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/Gobitech/Gobi-IOS-SDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'savilov' => 'serega.avilov@gmail.com' }
-  s.source           = { :git => 'https://github.com/savilov/GobiSDK.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Gobitech' => 'andreas@gobiapp.com' }
+  s.source           = { :http => 'https://github.com/Gobitech/Gobi-IOS-SDK/releases/download/0.0.1/GobiSDK-0.0.1.zip' }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+  s.vendored_frameworks = 'GobiSDK.framework'
 
-  s.source_files = 'GobiSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'GobiSDK' => ['GobiSDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

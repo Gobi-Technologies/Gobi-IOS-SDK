@@ -3,7 +3,7 @@
 //  GobiSDK
 //
 //  Created by savilov on 02/07/2019.
-//  Copyright (c) 2019 savilov. All rights reserved.
+//  Copyright (c) 2019 Gobitech. All rights reserved.
 //
 
 import UIKit

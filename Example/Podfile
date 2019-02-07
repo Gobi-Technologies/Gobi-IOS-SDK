@@ -1,11 +1,7 @@
 use_frameworks!
+platform :ios, '10.0'
 
 target 'GobiSDK_Example' do
-  pod 'GobiSDK', :path => '../'
-
-  target 'GobiSDK_Tests' do
-    inherit! :search_paths
-
-    
-  end
+#  pod 'GobiSDK', :path => '../'
+  pod 'GobiSDK', :podspec => '../'
 end
