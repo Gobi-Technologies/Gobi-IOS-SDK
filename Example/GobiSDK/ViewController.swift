@@ -11,13 +11,13 @@ import UIKit
 import GobiSDK
 
 struct Stories {
-    static var gobiTeamStoryId = "<YOUR_STORY_KEY>"
+    static var gobiTeamStoryId = "OWEXMJUWM2FKMTE5M2U3NWIXZTIZZDK0NJQ2NJUYNZRKOGZHNZM1ZJFINWVHMJBK"
 }
 
 class ViewController: UIViewController {
     
     fileprivate let storyKey = Stories.gobiTeamStoryId
-    fileprivate let customerId = "<YOUR_CUSTOMER_ID>"
+    fileprivate let customerId = "ZDY5OGI0YZQ3MJG0MWE3ZDA0YWEXZDLK"
     
     fileprivate var story: GobiStory?
     @IBOutlet weak var imageView: UIImageView!
