@@ -138,6 +138,12 @@ public enum GobiError : Error, ErrorStringConvertible {
 
 The method is called when GobiSDK finished playing story and controller is dismissed. If UI shows the GobiStory it could be good place to call `getStoryData` to load updated information like thumbnail, unread count, etc.
 
+## Usage Notes
+
+#### 1. To hide status bar on video player make sure `View controller-based status bar appearance` is set to `YES` in `Info.plist` file.
+
+#### 2. Make sure `Info.plist` containt `App Transport Security Settings` and `Allow Arbitrary Loads` is set to `YES`
+
 ## Author
 
 Gobitech
