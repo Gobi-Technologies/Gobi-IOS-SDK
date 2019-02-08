@@ -8,23 +8,24 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GobiSDK'
-  s.version          = '0.0.2'
-  s.summary          = 'A short description of GobiSDK.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '0.1'
+  s.summary          = 'The Gobi iOS SDK makes it quick and easy to integrate engaging and interactive story functionality in your iOS app'
 
   s.description      = <<-DESC
-Long description for GobiSDK with detailed description
-                       DESC
+  The Gobi iOS SDK makes it easy to integrate Gobi stories into your own app
+  
+  Gobi stories:
+  -    Administer the user generated stories by allowing or declining content
+  -    Keep content live for as long as you want
+  -    Combine engaging stories with interactive voting/link stickers to lead more retention, traffic and commerce
+  -    Analytics
+  -    Web admin tool
+  DESC
 
   s.homepage         = 'https://github.com/Gobitech/Gobi-IOS-SDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Gobitech' => 'andreas@gobiapp.com' }
-  s.source           = { :git => 'https://github.com/Gobitech/Gobi-IOS-SDK.git', :tag => '0.0.2' }
+  s.source           = { :git => 'https://github.com/Gobitech/Gobi-IOS-SDK.git', :tag => '0.1' }
 
   s.ios.deployment_target = '10.0'
   s.vendored_frameworks = 'GobiSDK.framework'
