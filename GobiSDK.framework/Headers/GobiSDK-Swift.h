@@ -163,7 +163,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
-@import CoreGraphics;
 @import Foundation;
 @import UIKit;
 #endif
@@ -184,20 +183,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-
-@class UIColor;
-@class NSCoder;
-
-SWIFT_CLASS("_TtC7GobiSDK12GradientView")
-@interface GradientView : UIView
-@property (nonatomic, strong) UIColor * _Nullable topColor;
-@property (nonatomic, strong) UIColor * _Nullable bottomColor;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) Class _Nonnull layerClass;)
-+ (Class _Nonnull)layerClass SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)tintColorDidChange;
-@end
 
 
 
