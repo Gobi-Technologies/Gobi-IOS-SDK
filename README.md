@@ -1,7 +1,7 @@
 # GobiSDK
 
 [![Version](https://img.shields.io/cocoapods/v/GobiSDK.svg?style=flat)](https://cocoapods.org/pods/GobiSDK)
-[![License](https://img.shields.io/cocoapods/l/GobiSDK.svg?style=flat)](https://cocoapods.org/pods/GobiSDK)
+[![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://cocoapods.org/pods/GobiSDK)
 [![Platform](https://img.shields.io/cocoapods/p/GobiSDK.svg?style=flat)](https://cocoapods.org/pods/GobiSDK)
 
 ## Installation
