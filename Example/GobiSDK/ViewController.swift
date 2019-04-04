@@ -11,7 +11,7 @@ import UIKit
 import GobiSDK
 
 struct Stories {
-    static var gobiTeamStoryId = "OWEXMJUWM2FKMTE5M2U3NWIXZTIZZDK0NJQ2NJUYNZRKOGZHNZM1ZJFINWVHMJBK"
+    static var gobiTeamStoryId =  "OWEXMJUWM2FKMTE5M2U3NWIXZTIZZDK0NJQ2NJUYNZRKOGZHNZM1ZJFINWVHMJBK"
 }
 
 class ViewController: UIViewController {
@@ -81,13 +81,8 @@ extension ViewController {
         if story.unreadCount > 0 {
             imageView.image = nil
             imageView.contentMode = .scaleAspectFill
-            DispatchQueue.global(qos: .background).async {
-                if let thumbnail = story.thumbnail, let url = URL(string: thumbnail), let data = try? Data(contentsOf: url) {
-                    let image = UIImage(data: data)
-                    DispatchQueue.main.async {
-                        self.imageView.image = image
-                    }
-                }
+            story.generateInteractivePreviewImage(with: imageView.bounds.size) { (image) in
+                self.imageView.image = image
             }
         } else {
             imageView.contentMode = .center
