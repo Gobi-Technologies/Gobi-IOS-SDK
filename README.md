@@ -49,7 +49,7 @@ override func viewDidLoad() {
 
 ```swift
 struct Stories {
-    static var gobiTeamStoryId = "OWEXMJUWM2FKMTE5M2U3NWIXZTIZZDK0NJQ2NJUYNZRKOGZHNZM1ZJFINWVHMJBK"
+    static var gobiTeamStoryId = "YZY5MJVKOWYWN2NIOTNIYTLIN2MXODGYOWZKNDU3YWZLNGM4MGUYMJNMMJIWNTG4"
 }
 ```
 
@@ -91,8 +91,25 @@ func showStory(_ story: GobiStory) {
     }
 }
 ```
+### 5. Upload media to the story
 
-### 5. `GobiDelegate`
+GobiSDK supports uploading media to one or several stories.
+
+Use `public static func addMedia(to storyID: String, from vc: UIViewController)` to post one story 
+
+```swift
+    Gobi.addMedia(to: storyKey, from: self)
+```
+
+Or use `public static func addMedia(to storyIDs: [String], from vc: UIViewController)` to let user choose from list to what stories add media.
+
+```swift
+    Gobi.addMedia(to: [storyKey], from: self)
+```
+
+When calling these methods GobiSDK will open camera and let use take photo or video, then add stickers, texts or draw something before uploading media. 
+
+### 6. `GobiDelegate`
 
 ```swift
 public protocol GobiDelegate {
@@ -102,6 +119,15 @@ public protocol GobiDelegate {
     public func didFailWith(_ error: GobiError)
 
     public func didFinishShowingMedia()
+
+    public func didFinishAddingMedia(success: Bool)
+
+    public func didStartUploadingMedia(with id: String)
+
+    public func didFailUploadingMedia(with id: String)
+
+    public func didFinishUploadingMedia(with id: String)
+
 }
 ```
 
@@ -137,6 +163,22 @@ public enum GobiError : Error, ErrorStringConvertible {
 #### public func didFinishShowingMedia()
 
 The method is called when GobiSDK finished playing story and controller is dismissed. If UI shows the GobiStory it could be good place to call `getStoryData` to load updated information like thumbnail, unread count, etc.
+
+#### public func didFinishAddingMedia(success: Bool)
+
+The method is called when GobiSDK has successfully uploaded media or failed for some reason.
+
+#### public func didStartUploadingMedia(with id: String)
+
+The method is called when GobiSDK starts uploading media to the story. `id` is local unique identifier for the media. SDK supports uploading media in background, so this method could be called several times if uploading failed.
+
+#### public func didFailUploadingMedia(with id: String)
+
+The method is called when GobiSDK failed to upload media with provided id. SDK will retry uploading this asset later.
+
+#### public func didFinishUploadingMedia(with id: String)
+
+The method is called when GobiSDK successfully uploaded media with provided id.
 
 ## Usage Notes
 

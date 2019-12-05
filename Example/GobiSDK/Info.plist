@@ -41,5 +41,13 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera access for recording video</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone access for recording video</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Our application needs permission to write photos...</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>GobiSDK Example needs permission to save photo and video to Photo Library</string>
 </dict>
 </plist>

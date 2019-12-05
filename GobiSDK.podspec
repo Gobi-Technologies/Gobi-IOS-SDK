@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GobiSDK'
-  s.version          = '0.2.1'
+  s.version          = '1.0.0'
   s.summary          = 'The Gobi iOS SDK makes it quick and easy to integrate engaging and interactive story functionality in your iOS app'
 
   s.description      = <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/Gobitech/Gobi-IOS-SDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Gobitech' => 'andreas@gobiapp.com' }
-  s.source           = { :git => 'https://github.com/Gobitech/Gobi-IOS-SDK.git', :tag => '0.2.1' }
+  s.source           = { :git => 'https://github.com/Gobitech/Gobi-IOS-SDK.git', :tag => '1.0.0' }
 
   s.ios.deployment_target = '10.0'
   s.vendored_frameworks = 'GobiSDK.framework'

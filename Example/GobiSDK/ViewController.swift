@@ -11,7 +11,7 @@ import UIKit
 import GobiSDK
 
 struct Stories {
-    static var gobiTeamStoryId =  "OWEXMJUWM2FKMTE5M2U3NWIXZTIZZDK0NJQ2NJUYNZRKOGZHNZM1ZJFINWVHMJBK"
+    static var gobiTeamStoryId =  "YZY5MJVKOWYWN2NIOTNIYTLIN2MXODGYOWZKNDU3YWZLNGM4MGUYMJNMMJIWNTG4"
 }
 
 class ViewController: UIViewController {
@@ -45,6 +45,10 @@ class ViewController: UIViewController {
         reloadStory()
     }
     
+    @IBAction func openCameraView(_ sender: Any) {
+        Gobi.addMedia(to: storyKey, from: self)
+    }
+
 }
 
 extension ViewController: GobiDelegate {
@@ -63,6 +67,10 @@ extension ViewController: GobiDelegate {
         reloadStory()
     }
     
+    func didFinishUploadingMedia(with id: String) {
+        reloadStory()
+    }
+
 }
 
 extension ViewController {

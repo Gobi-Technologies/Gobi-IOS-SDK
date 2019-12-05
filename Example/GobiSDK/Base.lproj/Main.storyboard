@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,10 +59,23 @@
                                     <outletCollection property="gestureRecognizers" destination="6ni-El-6dZ" appends="YES" id="XH3-wh-5qK"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLy-ba-eKG">
+                                <rect key="frame" x="112.5" y="587" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="TPQ-fs-RWq"/>
+                                    <constraint firstAttribute="height" constant="50" id="raD-L2-glg"/>
+                                </constraints>
+                                <state key="normal" title="Open Camera View"/>
+                                <connections>
+                                    <action selector="openCameraView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dK5-Y9-21W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="oox-t0-d0P" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="5qV-Ft-pZ0"/>
+                            <constraint firstItem="tLy-ba-eKG" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="L2R-cE-pAI"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="tLy-ba-eKG" secondAttribute="bottom" constant="30" id="YHW-A1-zvT"/>
                             <constraint firstItem="nAZ-mq-IZ7" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-30" id="dun-Xw-rqP"/>
                             <constraint firstItem="oox-t0-d0P" firstAttribute="top" secondItem="nAZ-mq-IZ7" secondAttribute="bottom" constant="30" id="l1C-OF-hXX"/>
                             <constraint firstItem="nAZ-mq-IZ7" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="o4s-qj-M5Z"/>
@@ -82,6 +93,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="140" y="101"/>
         </scene>
     </scenes>
 </document>
