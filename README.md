@@ -4,6 +4,11 @@
 [![License](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://cocoapods.org/pods/GobiSDK)
 [![Platform](https://img.shields.io/cocoapods/p/GobiSDK.svg?style=flat)](https://cocoapods.org/pods/GobiSDK)
 
+## WARNING
+
+This SDK is not maintained anymore and could only be used to display stories from our legacy backend. 
+
+
 ## Installation
 
 GobiSDK is available through [CocoaPods](https://cocoapods.org). To install
